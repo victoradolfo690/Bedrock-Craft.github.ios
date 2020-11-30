@@ -1,21 +1,449 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Webinterface of CubeHosting.me: Free minecraft servers!</title>
-<base href="/">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="/cdn-cgi/apps/head/pThn1IMgFLZUviHIoLn3ek3tczQ.js"></script><link rel="icon" type="image/x-icon" href="favicon.ico">
-<script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js type="fcdc34343c4a592c366d98d6-text/javascript"></script>
-<link rel="stylesheet" href="styles.fb99bc562f1091d19395.css"></head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ade4f02621",applicationID:"507442138"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>bedrock Craft | Welcome</title>
+
+    <link rel="shortcut icon" href="https://dunb17ur4ymx4.cloudfront.net/webstore/favicons/47a0865644443ebe68b454d0447f72f635c659b0.png">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-36735942-3']);
+        _gaq.push(['_trackPageview']);
+
+        
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!-- Generated via SASS -->
+    <link href="/template-assets/store.css?updated=49d8fda10f1ff462e3481ff5ca784316d603cf905d8fbeef6eca984bbc3088b6" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a43b53df44.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Theme CSS Output -->
+    <style>a {
+    color: #0076e0;
+}
+a:hover {
+    color: #004e94;
+}
+.text-primary {
+    color: #0076e0!important;
+}
+a.text-primary:hover, a.text-primary:focus {
+    color: #005bad !important;
+}
+.bg-primary {
+    background-color: #0076e0 !important;
+}
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+    background-color: #005bad !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0076e0;
+    border-color: #0076e0;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0062ba;
+    border-color: #005bad;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #0076e0;
+    border-color: #0076e0;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #005bad;
+    border-color: #0054a0;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 118, 224, 0.5);
+}
+.jumbotron {
+    background-color: #0076e0;
+    background-image: url(https://cdn.tebex.io/webstore/tebex2020/jumbotron-bg-blue.jpg);
+}
+.progress-bar {
+    color: #fff;
+    background-color: #0076e0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #0076e0;
+    background-color: #fafafa;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #0076e0;
+}
+.gateways .radio input[type="radio"]:checked + img {
+    border: 2px solid #0076e0 !important;
+}</style>
+
+</head>
 <body>
-<app-root></app-root>
-<script type="fcdc34343c4a592c366d98d6-text/javascript" charset="utf-8">
-// Place this code snippet near the footer of your page before the close of the /body tag
-// LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.
-                            
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}(';q L=\'\',29=\'23\';1x(q i=0;i<12;i++)L+=29.U(D.K(D.J()*29.F));q 2k=1,2A=16,2C=4s,2v=34,2q=B(t){q o=!1,i=B(){z(k.1j){k.2L(\'2S\',e);E.2L(\'1T\',e)}O{k.2N(\'2U\',e);E.2N(\'27\',e)}},e=B(){z(!o&&(k.1j||4r.2J===\'1T\'||k.2P===\'2Q\')){o=!0;i();t()}};z(k.2P===\'2Q\'){t()}O z(k.1j){k.1j(\'2S\',e);E.1j(\'1T\',e)}O{k.2X(\'2U\',e);E.2X(\'27\',e);q n=!1;2I{n=E.4p==4o&&k.1Y}3a(a){};z(n&&n.2Y){(B r(){z(o)H;2I{n.2Y(\'1a\')}3a(e){H 4n(r,50)};o=!0;i();t()})()}}};E[\'\'+L+\'\']=(B(){q t={t$:\'23+/=\',4m:B(e){q r=\'\',d,n,o,s,c,l,i,a=0;e=t.e$(e);13(a<e.F){d=e.17(a++);n=e.17(a++);o=e.17(a++);s=d>>2;c=(d&3)<<4|n>>4;l=(n&15)<<2|o>>6;i=o&63;z(37(n)){l=i=64}O z(37(o)){i=64};r=r+T.t$.U(s)+T.t$.U(c)+T.t$.U(l)+T.t$.U(i)};H r},11:B(e){q n=\'\',d,l,s,c,a,i,r,o=0;e=e.1p(/[^A-4l-4k-9\\+\\/\\=]/g,\'\');13(o<e.F){c=T.t$.1J(e.U(o++));a=T.t$.1J(e.U(o++));i=T.t$.1J(e.U(o++));r=T.t$.1J(e.U(o++));d=c<<2|a>>4;l=(a&15)<<4|i>>2;s=(i&3)<<6|r;n=n+N.S(d);z(i!=64){n=n+N.S(l)};z(r!=64){n=n+N.S(s)}};n=t.n$(n);H n},e$:B(t){t=t.1p(/;/g,\';\');q n=\'\';1x(q o=0;o<t.F;o++){q e=t.17(o);z(e<1u){n+=N.S(e)}O z(e>4j&&e<4i){n+=N.S(e>>6|4h);n+=N.S(e&63|1u)}O{n+=N.S(e>>12|2f);n+=N.S(e>>6&63|1u);n+=N.S(e&63|1u)}};H n},n$:B(t){q o=\'\',e=0,n=4g=1r=0;13(e<t.F){n=t.17(e);z(n<1u){o+=N.S(n);e++}O z(n>4f&&n<2f){1r=t.17(e+1);o+=N.S((n&31)<<6|1r&63);e+=2}O{1r=t.17(e+1);2i=t.17(e+2);o+=N.S((n&15)<<12|(1r&63)<<6|2i&63);e+=3}};H o}};q r=[\'4d==\',\'3Y\',\'4c=\',\'4b\',\'4a\',\'49=\',\'48=\',\'47=\',\'46\',\'45\',\'44=\',\'43=\',\'42\',\'41\',\'40=\',\'3Z\',\'4t=\',\'4e=\',\'4u=\',\'4M=\',\'4O=\',\'4P=\',\'4Q==\',\'4R==\',\'4S==\',\'4T==\',\'4N=\',\'4U\',\'4W\',\'4X\',\'4Y\',\'4Z\',\'51\',\'52==\',\'4V=\',\'4L=\',\'4w=\',\'3W==\',\'4J=\',\'4I\',\'4H=\',\'4G=\',\'4F==\',\'4E=\',\'4D==\',\'4C==\',\'4B=\',\'4A=\',\'4z\',\'4y==\',\'4x==\',\'4v\',\'3X==\',\'3L=\'],p=D.K(D.J()*r.F),Y=t.11(r[p]),w=Y,M=1,g=\'#3V\',a=\'#3j\',W=\'#3l\',v=\'#3i\',Z=\'\',b=\'2g\\\'3f 3k 1W 3n 3p!\',y=\'3o 3m 3g 2B 3h 3c T 3e 3d\\\'t 3q 2t.\',f=\'2g 3s 3H 3U 3T 3S 2B 1W 3R 2l 3Q 3P 13 3O\',s=\'3N 2D 2t 3M 1W 3K 3J 2l 3I 3G T 3t\',o=0,u=0,n=\'3F.3E\',l=0,Q=e()+\'.2m\';B m(t){z(t)t=t.1E(t.F-15);q o=k.32(\'3D\');1x(q n=o.F;n--;){q e=N(o[n].1L);z(e)e=e.1E(e.F-15);z(e===t)H!0};H!1};B h(t){z(t)t=t.1E(t.F-15);q e=k.3C;x=0;13(x<e.F){1h=e[x].1M;z(1h)1h=1h.1E(1h.F-15);z(1h===t)H!0;x++};H!1};B e(t){q n=\'\',o=\'23\';t=t||30;1x(q e=0;e<t;e++)n+=o.U(D.K(D.J()*o.F));H n};B i(o){q i=[\'3A\',\'3z==\',\'3y\',\'3x\',\'2T\',\'3w==\',\'3v=\',\'3u==\',\'53=\',\'4K==\',\'55==\',\'5k==\',\'6s\',\'6r\',\'6q\',\'2T\'],a=[\'2V=\',\'6p==\',\'6o==\',\'6n==\',\'6m=\',\'6l\',\'6k=\',\'6j=\',\'2V=\',\'54\',\'6h==\',\'6f\',\'5Z==\',\'6e==\',\'6d==\',\'6c=\'];x=0;1G=[];13(x<o){c=i[D.K(D.J()*i.F)];d=a[D.K(D.J()*a.F)];c=t.11(c);d=t.11(d);q r=D.K(D.J()*2)+1;z(r==1){n=\'//\'+c+\'/\'+d}O{n=\'//\'+c+\'/\'+e(D.K(D.J()*20)+4)+\'.2m\'};1G[x]=24 26();1G[x].1U=B(){q t=1;13(t<7){t++}};1G[x].1L=n;x++}};B R(t){};H{38:B(t,a){z(6b k.I==\'6u\'){H};q o=\'0.1\',a=w,e=k.1c(\'1q\');e.1g=a;e.j.1k=\'1O\';e.j.1a=\'-1l\';e.j.V=\'-1l\';e.j.1y=\'2c\';e.j.X=\'6a\';q d=k.I.2u,r=D.K(d.F/2);z(r>15){q n=k.1c(\'2d\');n.j.1k=\'1O\';n.j.1y=\'1D\';n.j.X=\'1D\';n.j.V=\'-1l\';n.j.1a=\'-1l\';k.I.69(n,k.I.2u[r]);n.1e(e);q i=k.1c(\'1q\');i.1g=\'2x\';i.j.1k=\'1O\';i.j.1a=\'-1l\';i.j.V=\'-1l\';k.I.1e(i)}O{e.1g=\'2x\';k.I.1e(e)};l=68(B(){z(e){t((e.1X==0),o);t((e.1Z==0),o);t((e.1I==\'2s\'),o);t((e.1P==\'2h\'),o);t((e.1S==0),o)}O{t(!0,o)}},28)},1N:B(e,s){z((e)&&(o==0)){o=1;E[\'\'+L+\'\'].1A();E[\'\'+L+\'\'].1N=B(){H}}O{q f=t.11(\'67\'),u=k.66(f);z((u)&&(o==0)){z((2A%3)==0){q l=\'62=\';l=t.11(l);z(m(l)){z(u.1H.1p(/\\s/g,\'\').F==0){o=1;E[\'\'+L+\'\'].1A()}}}};q p=!1;z(o==0){z((2C%3)==0){z(!E[\'\'+L+\'\'].2e){q d=[\'61==\',\'6t==\',\'6g=\',\'6x=\',\'6z=\'],h=d.F,a=d[D.K(D.J()*h)],r=a;13(a==r){r=d[D.K(D.J()*h)]};a=t.11(a);r=t.11(r);i(D.K(D.J()*2)+1);q n=24 26(),c=24 26();n.1U=B(){i(D.K(D.J()*2)+1);c.1L=r;i(D.K(D.J()*2)+1)};c.1U=B(){o=1;i(D.K(D.J()*3)+1);E[\'\'+L+\'\'].1A()};n.1L=a;z((2v%3)==0){n.27=B(){z((n.X<8)&&(n.X>0)){E[\'\'+L+\'\'].1A()}}};i(D.K(D.J()*3)+1);E[\'\'+L+\'\'].2e=!0};E[\'\'+L+\'\'].1N=B(){H}}}}},1A:B(){z(u==1){q C=2H.6B(\'39\');z(C>0){H!0}O{2H.6v(\'39\',(D.J()+1)*28)}};q m=\'6y==\';m=t.11(m);z(!h(m)){q c=k.1c(\'5w\');c.21(\'5W\',\'5t\');c.21(\'2J\',\'1i/5s\');c.21(\'1M\',m);k.32(\'5r\')[0].1e(c)};5q(l);k.I.1H=\'\';k.I.j.19+=\'P:1D !14\';k.I.j.19+=\'1t:1D !14\';q Q=k.1Y.1Z||E.36||k.I.1Z,p=E.5p||k.I.1X||k.1Y.1X,r=k.1c(\'1q\'),M=e();r.1g=M;r.j.1k=\'2w\';r.j.1a=\'0\';r.j.V=\'0\';r.j.X=Q+\'1v\';r.j.1y=p+\'1v\';r.j.2p=g;r.j.1V=\'5o\';k.I.1e(r);q d=\'<a 1M="5n://5m.5l" j="G-1d:10.5X;G-1m:1o-1n;1b:5j;">5h 1x 56 5g</a>\';d=d.1p(\'5f\',e());d=d.1p(\'5e\',e());q i=k.1c(\'1q\');i.1H=d;i.j.1k=\'1O\';i.j.1C=\'1R\';i.j.1a=\'1R\';i.j.X=\'5c\';i.j.1y=\'5b\';i.j.1V=\'2n\';i.j.1S=\'.6\';i.j.2o=\'2r\';i.1j(\'2D\',B(){n=n.5a(\'\').59().58(\'\');E.2W.1M=\'//\'+n});k.1Q(M).1e(i);q o=k.1c(\'1q\'),R=e();o.1g=R;o.j.1k=\'2w\';o.j.V=p/7+\'1v\';o.j.5u=Q-5i+\'1v\';o.j.5v=p/3.5+\'1v\';o.j.2p=\'#5K\';o.j.1V=\'2n\';o.j.19+=\'G-1m: "5V 5U", 1w, 1s, 1o-1n !14\';o.j.19+=\'5T-1y: 5R !14\';o.j.19+=\'G-1d: 5Q !14\';o.j.19+=\'1i-1z: 1B !14\';o.j.19+=\'1t: 5P !14\';o.j.1I+=\'2M\';o.j.33=\'1R\';o.j.5O=\'1R\';o.j.5N=\'2E\';k.I.1e(o);o.j.5L=\'1D 5x 5I -5H 5G(0,0,0,0.3)\';o.j.1P=\'35\';q x=30,w=22,Y=18,Z=18;z((E.36<3b)||(5F.X<3b)){o.j.2Z=\'50%\';o.j.19+=\'G-1d: 5E !14\';o.j.33=\'5D;\';i.j.2Z=\'65%\';q x=22,w=18,Y=12,Z=12};o.1H=\'<2R j="1b:#5C;G-1d:\'+x+\'1F;1b:\'+a+\';G-1m:1w, 1s, 1o-1n;G-1K:5B;P-V:1f;P-1C:1f;1i-1z:1B;">\'+b+\'</2R><2O j="G-1d:\'+w+\'1F;G-1K:5A;G-1m:1w, 1s, 1o-1n;1b:\'+a+\';P-V:1f;P-1C:1f;1i-1z:1B;">\'+y+\'</2O><5z j=" 1I: 2M;P-V: 0.2K;P-1C: 0.2K;P-1a: 2a;P-2j: 2a; 2z:5y 6i #3r; X: 25%;1i-1z:1B;"><p j="G-1m:1w, 1s, 1o-1n;G-1K:2y;G-1d:\'+Y+\'1F;1b:\'+a+\';1i-1z:1B;">\'+f+\'</p><p j="P-V:5J;"><2d 5M="T.j.1S=.9;" 5S="T.j.1S=1;"  1g="\'+e()+\'" j="2o:2r;G-1d:\'+Z+\'1F;G-1m:1w, 1s, 1o-1n; G-1K:2y;2z-57:2E;1t:1f;5d-1b:\'+W+\';1b:\'+v+\';1t-1a:2c;1t-2j:2c;X:60%;P:2a;P-V:1f;P-1C:1f;" 5Y="E.2W.6A();">\'+s+\'</2d></p>\'}}})();E.2F=B(t,e){q n=6D.6w,o=E.6C,r=n(),i,a=B(){n()-r<e?i||o(a):t()};o(a);H{3B:B(){i=1}}};q 2G;z(k.I){k.I.j.1P=\'35\'};2q(B(){z(k.1Q(\'2b\')){k.1Q(\'2b\').j.1P=\'2s\';k.1Q(\'2b\').j.1I=\'2h\'};2G=E.2F(B(){E[\'\'+L+\'\'].38(E[\'\'+L+\'\'].1N,E[\'\'+L+\'\'].4q)},2k*28)});',62,412,'|||||||||||||||||||style|document||||||var|||||||||if||function||Math|window|length|font|return|body|random|floor|GAjXexhuIsis||String|else|margin|||fromCharCode|this|charAt|top||width||||decode||while|important|||charCodeAt||cssText|left|color|createElement|size|appendChild|10px|id|thisurl|text|addEventListener|position|5000px|family|serif|sans|replace|DIV|c2|geneva|padding|128|px|Helvetica|for|height|align|ahtjfxGnRo|center|bottom|0px|substr|pt|spimg|innerHTML|display|indexOf|weight|src|href|jEqunkTHfv|absolute|visibility|getElementById|30px|opacity|load|onerror|zIndex|you|clientHeight|documentElement|clientWidth||setAttribute||ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|new||Image|onload|1000|EWdCiPkZCa|auto|babasbmsgx|60px|div|ranAlready|224|We|none|c3|right|zfDSoIqVVi|your|jpg|10000|cursor|backgroundColor|IVNYpajjIo|pointer|hidden|here|childNodes|DOJSHwwAsl|fixed|banner_ad|300|border|ktIEBJnsaR|that|fzEtDMQkJV|click|15px|FhtiaIQqDM|zNndixHXft|sessionStorage|try|type|5em|removeEventListener|block|detachEvent|h1|readyState|complete|h3|DOMContentLoaded|cGFydG5lcmFkcy55c20ueWFob28uY29t|onreadystatechange|ZmF2aWNvbi5pY28|location|attachEvent|doScroll|zoom|||getElementsByTagName|marginLeft||visible|innerWidth|isNaN|fNoSMESWOA|babn|catch|640|advertising|wouldn|website|re|understand|without|FFFFFF|777777|glad|adb8ff|please|stopped|But|by|be|CCC|serve|site|YWR2ZXJ0aXNpbmcuYW9sLmNvbQ|YWdvZGEubmV0L2Jhbm5lcnM|YS5saXZlc3BvcnRtZWRpYS5ldQ|YWQuZm94bmV0d29ya3MuY29t|anVpY3lhZHMuY29t|YWQubWFpbC5ydQ|YWRuLmViYXkuY29t|clear|styleSheets|script|kcolbdakcolb|moc|on|responsible|adblocker|disabled|have|c3BvbnNvcmVkX2xpbms|after|Please|visiting|blocker|ad|disable|ask|and|ads|EEEEEE|Z2xpbmtzd3JhcHBlcg|b3V0YnJhaW4tcGFpZA|YWRCYW5uZXJXcmFw|QWRBcmVh|QWQ3Mjh4OTA|QWQzMDB4MjUw|QWQzMDB4MTQ1|YWQtY29udGFpbmVyLTI|YWQtY29udGFpbmVyLTE|YWQtY29udGFpbmVy|YWQtZm9vdGVy|YWQtbGI|YWQtbGFiZWw|YWQtaW5uZXI|YWQtaW1n|YWQtaGVhZGVy|YWQtZnJhbWU|YWQtbGVmdA|QWRGcmFtZTI|191|c1|192|2048|127|z0|Za|encode|setTimeout|null|frameElement|jBEujDOHMi|event|142|QWRGcmFtZTE|QWRGcmFtZTM|Z29vZ2xlX2Fk|QWRDb250YWluZXI|YWRzZW5zZQ|cG9wdXBhZA|YWRzbG90|YmFubmVyaWQ|YWRzZXJ2ZXI|YWRfY2hhbm5lbA|IGFkX2JveA|YmFubmVyYWQ|YWRBZA|YWRiYW5uZXI|YWRCYW5uZXI|YmFubmVyX2Fk|YWRUZWFzZXI|cHJvbW90ZS5wYWlyLmNvbQ|QWRCb3gxNjA|QWRGcmFtZTQ|RGl2QWQ|QWRMYXllcjE|QWRMYXllcjI|QWRzX2dvb2dsZV8wMQ|QWRzX2dvb2dsZV8wMg|QWRzX2dvb2dsZV8wMw|QWRzX2dvb2dsZV8wNA|RGl2QWQx|QWREaXY|RGl2QWQy|RGl2QWQz|RGl2QWRB|RGl2QWRC||RGl2QWRD|QWRJbWFnZQ|Y2FzLmNsaWNrYWJpbGl0eS5jb20|YWQtbGFyZ2UucG5n|YWRzLnlhaG9vLmNvbQ|detecting|radius|join|reverse|split|40px|160px|background|FILLVECTID2|FILLVECTID1|adblock|methods|120|black|YWRzLnp5bmdhLmNvbQ|com|blockadblock|http|9999|innerHeight|clearInterval|head|css|stylesheet|minWidth|minHeight|link|14px|1px|hr|500|200|999|45px|18pt|screen|rgba|8px|24px|35px|fff|boxShadow|onmouseover|borderRadius|marginRight|12px|16pt|normal|onmouseout|line|Black|Arial|rel|5pt|onclick|YmFubmVyX2FkLmdpZg||Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw|Ly9wYWdlYWQyLmdvb2dsZXN5bmRpY2F0aW9uLmNvbS9wYWdlYWQvanMvYWRzYnlnb29nbGUuanM||||querySelector|aW5zLmFkc2J5Z29vZ2xl|setInterval|insertBefore|468px|typeof|YWR2ZXJ0aXNlbWVudC0zNDMyMy5qcGc|d2lkZV9za3lzY3JhcGVyLmpwZw|bGFyZ2VfYmFubmVyLmdpZg|ZmF2aWNvbjEuaWNv|Ly9hZHZlcnRpc2luZy55YWhvby5jb20vZmF2aWNvbi5pY28|c3F1YXJlLWFkLnBuZw|solid|Q0ROLTMzNC0xMDktMTM3eC1hZC1iYW5uZXI|YWRjbGllbnQtMDAyMTQ3LWhvc3QxLWJhbm5lci1hZC5qcGc|MTM2N19hZC1jbGllbnRJRDI0NjQuanBn|c2t5c2NyYXBlci5qcGc|NzIweDkwLmpwZw|NDY4eDYwLmpwZw|YmFubmVyLmpwZw|YXMuaW5ib3guY29t|YWRzYXR0LmVzcG4uc3RhcndhdmUuY29t|YWRzYXR0LmFiY25ld3Muc3RhcndhdmUuY29t|Ly93d3cuZ3N0YXRpYy5jb20vYWR4L2RvdWJsZWNsaWNrLmljbw|undefined|setItem|now|Ly9hZHMudHdpdHRlci5jb20vZmF2aWNvbi5pY28|Ly95dWkueWFob29hcGlzLmNvbS8zLjE4LjEvYnVpbGQvY3NzcmVzZXQvY3NzcmVzZXQtbWluLmNzcw|Ly93d3cuZG91YmxlY2xpY2tieWdvb2dsZS5jb20vZmF2aWNvbi5pY28|reload|getItem|requestAnimationFrame|Date'.split('|'),0,{}));
+
+<!-- Header 1 -->
+<header id="header" class="bg-white position-relative">
+    <div class="bg-topbar text-white py-2">
+        <div class="container">
+            <div class="row no-gutters align-items-center">
+                <div class="col-8 col-md-4 col-lg-4 text-heading-font">
+                                            <a class="text-white text-capitalize ml-3" href="/login">Login</a>
+                                    </div>
+
+                <div class="col-4 col-md-6 ml-lg-auto">
+                    <div class="dropdown text-right">
+                        <button class="btn btn-link text-white dropdown-toggle p-0 font-weight-bold" type="button" id="currencyButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USD
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="currencyButton">
+                                                                                                <a class="dropdown-item  >" href="?currency=AUD">AUD</a>
+                                                                                                                                <a class="dropdown-item  >" href="?currency=BRL">BRL</a>
+                                                                                                                                <a class="dropdown-item  >" href="?currency=CAD">CAD</a>
+                                                                                                                                                                                            <a class="dropdown-item  >" href="?currency=DKK">DKK</a>
+                                                                                                                                <a class="dropdown-item  >" href="?currency=EUR">EUR</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a class="dropdown-item  >" href="?currency=NOK">NOK</a>
+                                                                                                                                <a class="dropdown-item  >" href="?currency=NZD">NZD</a>
+                                                                                                                                                                                            <a class="dropdown-item  >" href="?currency=PLN">PLN</a>
+                                                                                                                                <a class="dropdown-item  >" href="?currency=GBP">GBP</a>
+                                                                                                                                                                                            <a class="dropdown-item  >" href="?currency=SEK">SEK</a>
+                                                                                                                                                                                                                                                                                                                                                                                <a class="dropdown-item  active >" href="?currency=USD">USD</a>
+                                                                                                                                                                                                                                                                                                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-none d-xl-block">
+        <div class="navbar navbar-expand-lg navbar-light bg-white py-4">
+            <div class="container">
+                <div class="col-12 col-sm-3 px-0">
+                    <a href="/" class="navbar-brand d-flex align-items-center text-primary text-heading-font mr-0">
+                                                <img class="mx-auto mx-sm-0" src="//dunb17ur4ymx4.cloudfront.net/webstore/logos/dcb79e10263e7daace6ebac5688003fee15055cf.png" />
+                                            </a>
+                </div>
+
+                <div class="col-12 col-sm-9 px-0">
+                    <div class="text-center text-sm-right">
+                        <div class="row mt-3 mt-sm-0">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="dropdown d-none d-sm-block d-lg-inline-block mt-3 mt-lg-0">
+                                    
+                                    <button class="btn btn-primary" disabled="disabled"><i class="icon-shopping-cart icon-white"></i>
+                                        0 items for 0.00 USD
+                                    </button>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light border-top border-bottom py-2 bg-navbar">
+            <div class="container px-0">
+                <div class="dropdown d-block d-sm-none  mt-lg-0">
+                    
+                    <button class="btn btn-primary" disabled="disabled"><i class="icon-shopping-cart icon-white"></i>
+                        0 items for 0.00 USD
+                    </button>
+                                    </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="navbar-collapse mt-4 mt-lg-0 collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav text-uppercase flex-wrap">
+
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/">Inicio</a>
+                        </li>
+
+                                                                        <li class="nav-item dropdown dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">SURVIVAL </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <a class="dropdown-item" href="/category/rangos-temporales">RANGOS TEMPORALES</a>
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes"> RANGOS PERMANENTES </a>
+                                                                <a class="dropdown-item" href="/category/kits">KITS</a>
+                                                                <a class="dropdown-item" href="/category/keys">KEYS</a>
+                                                                <a class="dropdown-item" href="/category/armas">ARMAS</a>
+                                                            </div>
+                                                                                                    <li class="nav-item dropdown dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">skywars </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes-1">Rangos Permanentes</a>
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes-2">Rangos Permanentes</a>
+                                                            </div>
+                                                    
+                                                <li class="nav-item "><a class="nav-link" href="/Desbaneo">Desbaneo</a></li>
+                                                <li class="nav-item "><a class="nav-link" href="/Reglas">Reglas del servidor</a></li>
+                                                <li class="nav-item "><a class="nav-link" href="/Terminos">Terminos y condiciones</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-block d-xl-none">
+        <div class="navbar navbar-expand-xl navbar-light bg-white py-4">
+            <div class="container">
+                <div class="col-12 col-sm-3 px-0">
+                    <a href="/" class="navbar-brand d-flex align-items-center text-primary text-heading-font mr-0">
+                                                <img class="mx-auto mx-sm-0" src="//dunb17ur4ymx4.cloudfront.net/webstore/logos/dcb79e10263e7daace6ebac5688003fee15055cf.png" />
+                                            </a>
+                </div>
+
+                <div class="col-12 col-sm-9 px-0">
+                    <div class="text-center text-sm-right">
+                        <div class="row mt-3 mt-sm-0">
+                            <div class="col-12 d-flex align-items-center">
+
+                            </div>
+                            <div class="col-12 col-md-6 d-none">
+                                <div class="dropdown d-none d-xl-inline-block mt-3 mt-lg-0">
+                                    
+                                    <button class="btn btn-primary" disabled="disabled"><i class="icon-shopping-cart icon-white"></i>
+                                        0 items for 0.00 USD
+                                    </button>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="header-2 navbar navbar-expand-xl navbar-light border-top border-bottom py-2 bg-navbar">
+            <div class="container px-0">
+                <div class="dropdown d-block d-xl-none  mt-lg-0">
+                    
+                    <button class="btn btn-primary" disabled="disabled"><i class="icon-shopping-cart icon-white"></i>
+                        0 items for 0.00 USD
+                    </button>
+                                    </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mobileSupportedContent"
+                        aria-controls="mobileSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="navbar-collapse mt-4 mt-lg-0 collapse" id="mobileSupportedContent">
+
+                    <ul class="navbar-nav text-uppercase flex-wrap my-2 my-xl-0">
+
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/">Inicio</a>
+                        </li>
+
+                                                                        <li class="nav-item dropdown dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">SURVIVAL </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <a class="dropdown-item" href="/category/rangos-temporales">RANGOS TEMPORALES</a>
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes"> RANGOS PERMANENTES </a>
+                                                                <a class="dropdown-item" href="/category/kits">KITS</a>
+                                                                <a class="dropdown-item" href="/category/keys">KEYS</a>
+                                                                <a class="dropdown-item" href="/category/armas">ARMAS</a>
+                                                            </div>
+                                                                                                    <li class="nav-item dropdown dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">skywars </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes-1">Rangos Permanentes</a>
+                                                                <a class="dropdown-item" href="/category/rangos-permanentes-2">Rangos Permanentes</a>
+                                                            </div>
+                                                    
+                                                <li class="nav-item "><a class="nav-link" href="/Desbaneo">Desbaneo</a></li>
+                                                <li class="nav-item "><a class="nav-link" href="/Reglas">Reglas del servidor</a></li>
+                                                <li class="nav-item "><a class="nav-link" href="/Terminos">Terminos y condiciones</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<div class="notification">
+    </div>
+
+    <div class="jumbotron inner-page-title">
+        <div class="container">
+            <header class="page-title">
+                <h1 class="text-center text-white text-shadow">Bienvenido</h1>
+            </header>
+        </div>
+    </div>
+
+    <div id="content-outer" class="container px-0 px-lg-3">
+        <section class="bg-white p-0 row no-gutters border-left border-right layout-standard">
+            <div class="col-12 col-lg-8">
+                <div class="p-xl-5 p-4">
+                    <p style="text-align:center;"><img src="https://dunb17ur4ymx4.cloudfront.net/wysiwyg/882891/1d510d4607fbda3e67960da5309b4428af55b2e3.png" style="width:300px;" class="fr-fic fr-dib" width="300" height="300" alt="1d510d4607fbda3e67960da5309b4428af55b2e3.png" /></p><h1 style="text-align:center;"><strong>Bienvenido a bedrock Craft!</strong> </h1><h2 style="text-align:center;">Por tu donación recibiras a cambio recompensas </h2><h3 style="text-align:center;">epicas!  </h3><p><br /></p><h2 style="text-align:center;"><strong><em>Podrás realizar tus donaciones con los siguientes metodos de pago</em></strong> </h2><p><br /></p><p style="text-align:center;"><img src="https://dunb17ur4ymx4.cloudfront.net/wysiwyg/882891/9387164d7a3999cb82b709f2e97915d4690a3fb2.png" style="width:300px;" class="fr-fic fr-dib" width="300" height="155" alt="9387164d7a3999cb82b709f2e97915d4690a3fb2.png" /></p><p style="text-align:center;"><br /></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 sidebar">
+                <div class="widget p-4 p-md-5 border-top module">
+    <h4>Donadores recientes</h4>
+    <ul class="list-unstyled recent-payments">
+                No recent payments to display.
+            </ul>
+</div><div class="widget p-4 p-md-5 border-top module">
+    <h4>El estado del servidor
+
+                <span class="badge badge-success float-right d-inline-block">En linea</span>
+        
+    </h4>
+    <div class="card text-center p-3 w-100">
+
+        <h4 class="mb-2">Bedrockcraft.mygs.co:40050</h4>
+        <p class="text-heading-font mb-0">
+                        0 / 100
+                        players online.
+        </p>
+    </div>
+</div>
+<div class="widget p-4 p-md-5 border-top module panel box-container" id="giftcardbalance">
+    <h4>Saldo de la tarjeta de regalo</h4>
+    <div class="giftcardbalance">
+        <form action="#giftcardbalance" method='post'>
+            <div class="input-group mb-3">
+                <input type="text" name="card_number" placeholder="Card Number" class="form-control" value="">
+                <div class="input-group-append">
+                    <button class="btn btn-primary btn-sm">Verificar <i class="fas fa-chevron-right ml-1"></i></button>
+                </div>
+            </div>
+
+            
+        </form>
+    </div>
+</div>
+            </div>
+        </section>
+    </div>
+
+    
+
+<footer class="container px-0 px-lg-3">
+    <div class="footer-copyright p-3 bg-footer border">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 text-heading-font text-dark text-center text-md-left mb-4 mb-md-0">
+                <span class="branding">
+                                        Funcionando por <a href="https://www.tebex.io/" target="_blank" class="font-weight-bold text-dark">Tebex</a>
+                </span>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-right text-heading-font text-white">
+
+                
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-primary d-block d-sm-inline-block dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe mr-2"></i> Idioma
+                        </button>
+                        <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="?locale=en_GB">English (UK)</a>
+                                                        <a class="dropdown-item" href="?locale=en_US">English (US)</a>
+                                                        <a class="dropdown-item" href="?locale=es_ES">Spanish</a>
+                                                        <a class="dropdown-item" href="?locale=pt_BR">Portuguese (Brazil)</a>
+                                                        <a class="dropdown-item" href="?locale=pt_PT">Portuguese (Portugal)</a>
+                                                    </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="modal fade remote-modal" tabindex="-1" role="dialog" aria-labelledby="popup-modal" aria-hidden="true"  id="popup-modal">
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+<script src="/templates/209/js/skin.min.js"></script>
+<script src="/templates/209/js/site.js"></script>
+<script>
+    jQuery(function () {
+        var countdowns = $(".countdown-to");
+        countdowns.each(function () {
+            setInterval(function (ele) {
+                timeLeft = parseInt(ele.attr("data-countdown"));
+                if (timeLeft == 0) {
+                    ele.html("Time Expired!");
+                } else {
+                    timeLeft--;
+                    ele.attr("data-countdown", timeLeft);
+                    var days = Math.floor(timeLeft / (60 * 60 * 24));
+                    var hours = Math.floor((timeLeft % (60 * 60 * 24)) / (60 * 60));
+                    var minutes = Math.floor((timeLeft % (60 * 60)) / (60));
+                    var seconds = Math.floor((timeLeft % 60));
+                    ele.html(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
+                }
+            }, 1000, jQuery(this));
+        });
+    });
+
 </script>
-<script src="runtime-es2015.0811dcefd377500b5b1a.js" type="fcdc34343c4a592c366d98d6-module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer type="fcdc34343c4a592c366d98d6-text/javascript"></script><script src="polyfills-es5.d33101a7d00db04ac139.js" nomodule defer type="fcdc34343c4a592c366d98d6-text/javascript"></script><script src="polyfills-es2015.d630f8d8d2f25c0ddc79.js" type="fcdc34343c4a592c366d98d6-module"></script><script src="main-es2015.faac7728aa7e0f91bb5c.js" type="fcdc34343c4a592c366d98d6-module"></script><script src="main-es5.faac7728aa7e0f91bb5c.js" nomodule defer type="fcdc34343c4a592c366d98d6-text/javascript"></script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="fcdc34343c4a592c366d98d6-|49" defer=""></script></body>
+<script>	
+    jQuery(".card-container").eq(0).remove();	
+</script>	
+<script type="text/javascript" src="/assets/js/discord.js"></script>
+<div id="waiting-overlay" style="display: none;">	
+    <i class="fa fa-cog fa-spin fa-3x"></i>	
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ade4f02621","applicationID":"507442138","transactionName":"ZQAEZUBYWBVTBRZbXlxKJ1JGUFkIHS8MVlRKSg9fVlxO","queueTime":0,"applicationTime":53,"atts":"SUcHEwhCSxs=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
 </html>
